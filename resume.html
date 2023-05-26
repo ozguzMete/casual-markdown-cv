@@ -7,6 +7,19 @@
   :root {
   --maxWidth: 1024px;
   }
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  padding: 5px;
+}
   body { line-height:1.5; margin:auto; padding:3px; max-width:var(--maxWidth); display:none; FONT-FAMILY:"Segoe UI",ARIAL; }
   h1  { font-size:200%; padding:16px; border:1px solid lightgrey; BACKGROUND:#f0f0f0; }
   h2  { border-bottom:1px solid grey; padding:2px; }
@@ -47,11 +60,20 @@ Teach animals to your toddlers and your preschoolers in a fun and engaging way!
   <img class="roundAnimals" src="resume/roundAnimals5.png" />
   <img class="roundAnimals" src="resume/roundAnimals6.png" />
   <img class="roundAnimals" src="resume/roundAnimals7.png" /><br />
-  <img style="object-fit:cover;width:200px" src="resume/U_Logo_MadeWith_RichBlack_RGB.png" />
-  <img style="object-fit:cover;width:200px" src="resume/google-play-badge.png" />
-  <img style="object-fit:cover;width:200px" src="resume/GitHub_Logo.png" />
-  <img style="object-fit:cover;width:200px" src="resume/yt_logo_rgb_light.png" />
-  
+  <div class="row">
+  <div class="column">
+    <img style="width:100%" alt="This product is made with Unity" src="resume/U_Logo_MadeWith_RichBlack_RGB.png" />
+  </div>
+  <div class="column">
+    <img style="width:100%" alt="Check the archived product info" src="resume/google-play-badge.png" />
+  </div>
+  <div class="column">
+    <img style="width:100%" alt="This product is open-source!" src="resume/GitHub_Logo.png" />
+  </div>
+      <div class="column">
+    <img style="width:100%" alt="Watch the trailer on YouTube" src="resume/yt_logo_rgb_light.png" />
+  </div>
+</div>
 ### BigBoy - Visual Novel
 No crime will go unpunished! An evil price...
   
